@@ -26,11 +26,15 @@ table_rows = table.find_all('tr')
 #    }
 #]
 
+departuresList = []
+
 for tr in table_rows:
     td = tr.find_all('td')
     row = [i.text for i in td]
-    print(row)
+    departuresList.append(row)
 
+
+#if cell.text[:2].isnumeric() = True
 
 df = pd.read_html(str(table))
 
