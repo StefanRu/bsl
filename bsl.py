@@ -38,11 +38,12 @@ for tr in table_rows:
 timeregex = re.compile('^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$')
 
 for row in departuresListRaw:
-    if re.search(timeregex, row[1]):
-        departuresList.append()
+    print(row)
+#    if re.search(timeregex, row[1]):
+#        departuresList.append()
 
-for s in departuresList:
-    print(*s)
+#for s in departuresList:
+#    print(*s)
 
 
 #if cell.text[:2].isnumeric() = True
