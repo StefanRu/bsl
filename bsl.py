@@ -44,8 +44,8 @@ for row in departuresListRaw:
 #    if re.search(timeregex, row[1]):
 #        departuresList.append()
 
-for s in departuresListRaw:
-    print(*s)
+#for s in departuresListRaw:
+#    print(*s)
 
 
 #if cell.text[:2].isnumeric() = True
