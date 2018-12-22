@@ -9,10 +9,11 @@ from influxdb import InfluxDBClient
 
 res = requests.get("https://www.euroairport.com/en/passengers-visitors/arrivals-departures/flights/departures.html")
 soup = BeautifulSoup(res.content,'lxml')
-table = soup.find_all('table')[0]
+#table = soup.find_all('table')[0]
+s = soup.find('table', attrs={'class':'mytable'}).get_text()
 
-xmltable = ET.XML(table)
-rows = iter(xmltable)
+table = ET.XML(s)
+rows = iter(table)
 headers = [col.text for col in next(rows)]
 for row in rows:
     values = [col.text for col in row]
