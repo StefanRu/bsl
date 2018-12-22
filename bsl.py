@@ -26,14 +26,21 @@ table_rows = table.find_all('tr')
 #    }
 #]
 
+departuresListRaw = []
 departuresList = []
 
 for tr in table_rows:
     td = tr.find_all('td')
     row = [i.text for i in td]
-    departuresList.append(row)
+    departuresListRaw.append(row)
 
-print '\n'.join(str(p) for p in departuresList) 
+for row in departuresListRaw:
+    if row[1].text[:2].isnumeric() = True
+    departuresList.append()
+
+for s in departuresList:
+    print(*s)
+
 
 #if cell.text[:2].isnumeric() = True
 
