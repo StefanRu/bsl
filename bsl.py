@@ -11,8 +11,8 @@ res = requests.get("https://www.euroairport.com/en/passengers-visitors/arrivals-
 soup = BeautifulSoup(res.content,'lxml')
 table = soup.find_all('table')[0]
 
-table = ET.XML(table)
-rows = iter(table)
+xmltable = ET.XML(table)
+rows = iter(xmltable)
 headers = [col.text for col in next(rows)]
 for row in rows:
     values = [col.text for col in row]
