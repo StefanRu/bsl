@@ -16,7 +16,7 @@ rows = iter(table)
 headers = [col.text for col in next(rows)]
 for row in rows:
     values = [col.text for col in row]
-    print dict(zip(headers, values))
+    print(dict(zip(headers, values)))
 
 #table_rows = table.find_all('tr')
 
