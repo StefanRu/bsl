@@ -33,6 +33,7 @@ for tr in table_rows:
     row = [i.text for i in td]
     departuresList.append(row)
 
+print '\n'.join(str(p) for p in departuresList) 
 
 #if cell.text[:2].isnumeric() = True
 
