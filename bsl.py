@@ -35,7 +35,7 @@ for tr in table_rows:
     departuresListRaw.append(row)
 
 for row in departuresListRaw:
-    if row[1].text[:2].isnumeric() = True
+    if row[1].text[:2].isnumeric() == True
     departuresList.append()
 
 for s in departuresList:
