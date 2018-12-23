@@ -12,9 +12,9 @@ res = requests.get("https://www.euroairport.com/en/passengers-visitors/arrivals-
 soup = BeautifulSoup(res.content,'lxml')
 #table = soup.find_all('table')[0]
 #s = soup.find('table', attrs={'class':'flights-table'}).get_text()
-s = soup.find_all('table')[0]
+#s = soup.find_all('table')[0]
 
-table = etree.HTML(s).find("body/table")
+table = etree.HTML(soup).find("body/table")
 rows = iter(table)
 headers = [col.text for col in next(rows)]
 for row in rows:
