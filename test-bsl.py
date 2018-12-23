@@ -24,9 +24,9 @@ timeregex = re.compile('^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$')
 
 
 for row in departuresListRaw:
-    print(row[1])
-    if re.search(timeregex, row[1][1]):
-        departuresList.append(row[1])
+    #print(row[1])
+    #if re.search(timeregex, row[1][1]):
+    departuresList.append(row[1])
 
 print("------------------")
 for s in departuresList:
