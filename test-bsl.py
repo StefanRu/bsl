@@ -1,4 +1,5 @@
 import urllib.request
+import re
 from html_table_parser import HTMLTableParser
 
 target = 'https://www.euroairport.com/en/passengers-visitors/arrivals-departures/flights/departures.html'
