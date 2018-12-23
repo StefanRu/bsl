@@ -14,7 +14,7 @@ soup = BeautifulSoup(res.content,'lxml')
 #s = soup.find('table', attrs={'class':'flights-table'}).get_text()
 #s = soup.find_all('table')[0]
 
-table = etree.HTML(soup).find("body/table")
+table = etree.HTML(res).find("body/table")
 rows = iter(table)
 headers = [col.text for col in next(rows)]
 for row in rows:
