@@ -12,7 +12,7 @@ xhtml = f.read().decode('utf-8')
 # instantiate the parser and feed it
 p = HTMLTableParser()
 p.feed(xhtml)
-print(p.tables)
+#print(p.tables)
 
 
 departuresListRaw = []
@@ -25,8 +25,8 @@ timeregex = re.compile('^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$')
 
 for row in departuresListRaw:
     print(row[0])
-    if re.search(timeregex, row[1]):
-        departuresList.append()
+#    if re.search(timeregex, row[1]):
+#        departuresList.append()
 
-for s in departuresList:
-    print(*s)
+#for s in departuresList:
+#    print(*s)
