@@ -17,7 +17,7 @@ p.feed(xhtml)
 
 departuresListRaw = []
 departuresListRaw = p.tables
-departuresListRaw = filter(None, departuresListRaw)
+#departuresListRaw = filter(None, departuresListRaw)
 departuresList = []
 
 timeregex = re.compile('^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$')
